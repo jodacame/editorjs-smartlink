@@ -1,0 +1,7 @@
+.smart-link-audio {
+  width: 100%;
+}
+.smart-link-audio audio {
+  width: 100%;
+  border: none;
+}
