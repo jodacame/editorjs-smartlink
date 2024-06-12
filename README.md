@@ -13,7 +13,7 @@ You can customize the block by passing a configuration object to the constructor
 Get the package
 
 ```shell
-npm i --save @jodacame/editor-js-smartlink
+npm i --save https://github.com/jodacame/editorjs-smartlink
 ```
 
 Include module at your application
