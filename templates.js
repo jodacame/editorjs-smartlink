@@ -19,7 +19,7 @@ export default {
                   </audio>
                 </div>`,
 
-  link: `<a class='smart-link-preview' href="{{meta.url}}" target="_blank rel="noopener noreferre nofollow">
+  link: `<a class='smart-link-preview' href="{{meta.url}}" target="_blank" rel="noopener noreferre nofollow">
                   <div class='info'>
                     <h2 class='title'>{{meta.title}}</h2>
                     <p class='description'>{{meta.description}}</p>
