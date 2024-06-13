@@ -1,6 +1,6 @@
 {
   "name": "@jodacame/editorjs-smartlink",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A block for Editor.js to generate awesome or embed links from pasted URLs",
   "keywords": [
