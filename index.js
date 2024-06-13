@@ -27,7 +27,6 @@ class SmartLink {
   }
 
   async onPaste(event) {
-    console.log("onPaste", event);
     const data = {
       link: event.detail.data.href,
       type: "link",
