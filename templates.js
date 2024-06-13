@@ -25,9 +25,11 @@ export default {
                     <p class='description'>{{meta.description}}</p>
                     <span class='url'>{{meta.hostname}}</span>
                   </div>
-                  <div class='image'>
-                    <img src="{{meta.image.url}}" alt="{{meta.title}}">
-                  </div>
+                  {{#if meta.image.url}}
+                    <div class='image'>
+                      <img src="{{meta.image.url}}" alt="{{meta.title}}">
+                    </div>
+                  {{/if}}
                 </a>`,
 
   movie: `<div class="movie">

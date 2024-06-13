@@ -80,3 +80,27 @@
 .smart-link .movie .info .subheader .year {
   display: flex;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .smart-link .movie {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .smart-link .movie .poster {
+    width: 100%;
+    height: auto;
+  }
+  .smart-link .movie .title {
+    text-align: center;
+  }
+  .smart-link .movie .info .subheader {
+    justify-content: center;
+  }
+  .smart-link .movie .info .subheader .divider {
+    display: none !important;
+  }
+  .smart-link .movie .info .subheader ul.genres {
+    display: none !important;
+  }
+}
