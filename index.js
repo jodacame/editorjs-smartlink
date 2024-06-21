@@ -9,6 +9,7 @@ class SmartLink {
     this.config = {
       endpoint: config.endpoint,
       headers: config.headers,
+      hosts: config.hosts,
       templates: {
         ...Templates,
         ...config.templates,
@@ -20,13 +21,19 @@ class SmartLink {
     return {
       // A and Plain Text
       tags: ["A"],
-      // patterns: {
-      //   text: /https?:\/\/\S+\.\S+/,
-      // },
+      patterns: {
+        text: /https?:\/\/\S+\.\S+/,
+      },
     };
   }
 
   async onPaste(event) {
+    if (event.type === "pattern") {
+      event.detail.data = {
+        href: event.detail.data,
+        innerText: event.detail.data,
+      };
+    }
     const data = {
       link: event.detail.data.href,
       type: "link",
